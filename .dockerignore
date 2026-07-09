@@ -1,0 +1,15 @@
+target/
+.git/
+.idea/
+.settings/
+supabase/.temp/
+supabase/
+docs/
+pages-site/
+README.md
+LICENSE
+.gitignore
+src/main/webapp/admin/node_modules/
+node_modules/
+*.log
+*.tmp
