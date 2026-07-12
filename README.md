@@ -58,7 +58,7 @@
 |---|---|---|
 | 查看系统门面 | `/` | 项目说明、演示入口、健康检查入口 |
 | 前台浏览 | `/front/` | 首页、餐厅信息、菜品信息、公告、购物车、客服入口 |
-| 用户登录 | `/front/pages/login/login.html` | 前台用户登录、个人中心、地址、订单和收藏 |
+| 用户登录 | `/pages/login/login.html` | 前台用户登录、个人中心、地址、订单和收藏 |
 | 后台登录 | `/admin/` | 管理员登录、后台菜单、业务表维护 |
 | API 健康检查 | CloudBase `/ssm98yok/health` | 后端服务在线状态 |
 | 数据接口 | CloudBase `/ssm98yok/cantingxinxi/list?page=1&limit=1` | Supabase 数据读取和 API 返回 |
@@ -92,7 +92,7 @@
 ├── src/main/webapp/front/        # 前台静态页面
 ├── src/main/webapp/admin/        # Vue 2 后台管理端源码和构建产物
 ├── src/main/webapp/upload/       # 演示图片资源
-├── pages-site/                   # Cloudflare Pages 发布目录
+├── original-site/                # Cloudflare Pages 生产发布目录
 ├── supabase/migrations/          # Supabase 独立 schema 初始化脚本
 ├── docs/                         # 部署、功能、账号和截图文档
 ├── Dockerfile                    # CloudBase Run 容器构建
@@ -123,7 +123,7 @@ npm run build
 
 ### 前台静态页
 
-前台页面位于 `src/main/webapp/front/`。线上演示将前台、后台构建产物和演示上传资源整理到 `pages-site/` 后发布到 Cloudflare Pages。
+前台页面位于 `src/main/webapp/front/`。线上演示将恢复后的原前台、后台构建产物、演示资源和 Pages Worker 兼容层整理到 `original-site/` 后发布到 Cloudflare Pages。
 
 ## 部署说明
 

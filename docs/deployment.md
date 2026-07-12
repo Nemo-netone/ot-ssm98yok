@@ -73,13 +73,13 @@ POST /ssm98yok/yonghu/login
 发布目录：
 
 ```text
-pages-site
+original-site
 ```
 
 发布命令：
 
 ```powershell
-npx wrangler@3 pages deploy pages-site --project-name ot-ssm98yok --branch main --commit-dirty=true
+npx wrangler@3 pages deploy original-site --project-name ot-ssm98yok --branch main --commit-dirty=true
 ```
 
 说明：
@@ -92,7 +92,7 @@ npx wrangler@3 pages deploy pages-site --project-name ot-ssm98yok --branch main 
 
 | 来源 | 发布位置 | 说明 |
 |---|---|---|
-| `pages-site/index.html` | `/` | 作品集演示入口 |
+| `original-site/index.html` | `/` | 作品集演示入口 |
 | `src/main/webapp/front/` | `/front/` | 前台静态页面 |
 | `src/main/webapp/admin/dist/` | `/admin/` | 后台管理端构建产物 |
 | `src/main/webapp/upload/` | `/upload/` | 演示图片资源 |
